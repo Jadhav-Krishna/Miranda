@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #c5bcb3;
+}
+
+@media (max-width: 600px) {
+  #nav #n1 {
+    display: none;
+  }
+  #main {
+    overflow: hidden;
+  }
+  #page1 .workspace {
+    display: none;
+  }
+  #page1 #miranda {
+    margin-top: -32vh;
+    height: 20vh;
+  }
+  #page1 #miranda h1 {
+    font-size: 38vw;
+    letter-spacing: -1.7vw;
+  }
+  #page2 {
+    height: 110vh;
+    flex-direction: column;
+  }
+  #page2 #right {
+    width: 100vw;
+    height: 75vh;
+    position: absolute;
+    margin-top: -80vh;
+  }
+  #page2 #righth1 {
+    width: 100%;
+    font-size: 12vw;
+  }
+  #page2 #left {
+    height: 111vh;
+    width: 100vw;
+    border-bottom: 1px solid black;
+  }
+  #page2 #left img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+  #page2 #left p {
+    font-size: 6vw;
+    font-family: purana2;
+  }
+  #page2 #left #badaA {
+    font-size: 15vw;
+    font-family: purana1;
+  }
+  #page2 #left #bada {
+    font-size: 47vw;
+    letter-spacing: -2vw;
+  }
+  #page2 #left #interactive {
+    font-size: 27vw;
+    letter-spacing: -1vw;
+  }
+  #page3{   
+    height: 250vh;
+    padding: 2vw;
+  }
+  #page3 #tt{
+    height: 145vh;
+    width: 96vw;
+    flex-direction: column;
+  }
+  #page3 #web{
+    margin-top: 3vh;
+    height: 15vh;
+    width: 96vw;
+  }
+  #page3 #left{
+    border: none;
+  }
+  #page3 #left #top{
+    height: 100vh;
+    width: 96vw;
+    flex-direction: column;
+  }
+  #page3 #left img {
+    width: 92vw;
+    border: 1px solid black;
+  }  
+  #page3 #left #top h1 {
+    font-size: 23vw;
+    text-align: center;
+  }
+  #page3 #left #top h2 {
+    margin-top: -2vh;
+    font-size: 7vw;
+    margin-left: 3vw;
+    width: 80%;
+    line-height: 4.7vh;
+  }
+  #page3 #left #top h4 {
+    font-size: 3vw;
+    margin-left: 3vw;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  #page3 #left #top #tleft{
+    width: 92vw;
+    height: 50vh;
+    border: none;
+  }
+  #page3 #left #top #tright{
+    width: 92vw;
+    height: 50vh;
+    margin-top: 2vh;
+  }
+  #page3 #left #top #tright p {
+    margin-top: 1vh;
+    font-size: 5vw;
+  }
+  #page3 #left #top #tright span{
+    font-size: 8vw;
+  }
+  #page3 #right{
+    margin-top: 142vh;
+    height: 100px;
+    width: 96vw;
+    position: absolute;
+    margin-bottom: 50vh;
+    /* background-color: chocolate; */
+  }
+  #page3 #right h1 {
+        font-size: 21vw;
+  }
+  #page3 #right span {
+    font-family: purana2;
+    font-size: 21vw;
+    color: #1c1c1a;
+  }
+  #page3 #right #bada {
+    font-size: 40vw;
+    margin-top: -3vh;
+  }
+  #page3 #right p {
+    margin-top: -2vw;
+    font-family: purana1;
+    font-size: 4vw;
+  }
+  #page3 #right #para {
+    margin-top: 3vw;
+  }
+  #page3 #right button {
+    width: 40vw;
+    padding: 2vw;
+    margin: 2vh 22vw;
+    font-size: 10vw;
+  }
+  #page4{
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw;
+  }
+  #page4 #num{
+    height: 12vh;
+  }
+  #page4 #num h1{
+    letter-spacing: 0 !important;
+  }
+  #page4 #num h2{
+    letter-spacing: 0;
+    margin-top: 20px;
+  }
+  #page4 #pixel{
+    flex-direction: column;
+  }
+  #page4 #pixel #p1{
+    display: none;
+  }
+  #page4 #pixel #p2 img{
+    width: 96vw; 
+    height: 90vw;
+    border: 1px solid black;
+    position: absolute;
+}
+  #page5 img{
+    display: none;
+  }
+  #page5 #top{
+    height: 20vh;
+    margin-top: -25vh;
+  }
+  #page5 #top h1{
+    font-size: 40vw;
+  }
+  #page5 #bottom{
+    height: 60vh;
+    flex-direction: column-reverse;
+  }
+  #page5 #bottom h1{
+    font-size: 40vw;
+  }
+  #page5 #bottom h2{
+    font-size: 4vw;
+  }
+  #page5 #text p{
+    font-size: 5vw;
+}
+#page5 #text h2{
+    margin-top: 1.5vh;
+    font-size: 8vw;
+}
+#page6{
+    height: 123vh;
+}
+#page6 #cards{
+    margin-top: -45vh;
+    flex-direction: column;
+}
+#page6 .card{
+    height: 30vh;
+    width: 96vw;
+}
+#page6 .card #cargo{
+    padding: 2vh;
+}
+#page6 .card h1{
+    margin-top: 12vh;
+}
+#page6 #card6{
+    display: none;
+}
+#page6 .card:hover{
+    font-size: 1.7vh;
+    width: 96vw;
+}
+#page6 #footer{
+    height: 10vh;
+    width: 96vw;
+  }
+  #page6 #footer #lefty #stamp{
+    display: none;
+  }
+  #page6 #footer #righty i{
+    margin-left: 2vw;
+    font-size: 5vw;
+  }
+}

@@ -1,0 +1,579 @@
+@font-face {
+  font-family: purana2;
+  src: url(./DomaineDispCondMedium.ttf);
+}
+@font-face {
+  font-family: purana1;
+  src: url(./EditorialNew-Light.ttf);
+}
+@font-face {
+  font-family: purana3;
+  src: url(./Canopee.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  background-image: url(./bg.jpg);
+}
+#loader {
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  background-color: rgb(120, 51, 2);
+}
+#loader h1{
+  font-family: purana3;
+  font-size: 35vw;
+  font-weight: 500;
+  letter-spacing: -1vw;
+}
+#loader h2{
+  font-size: 7vw;
+  font-family: purana2;
+}
+
+#nav {
+  height: 10vh;
+  width: 100vw;
+  padding: 2vw;
+  z-index: 5;
+  background-image: url(./bg.jpg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav img {
+  height: 3vh;
+  cursor: pointer;
+}
+#nav h1 {
+  font-size: 2vh;
+  font-family: purana1;
+  color: rgba(0, 0, 0, 0.6);
+}
+#nav i {
+  font-size: 2.3vh;
+  cursor: pointer;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+#page1 #work {
+  height: 45vh;
+  width: 100vw;
+  padding: 3vw;
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: lavender; */
+}
+#page1 .workspace {
+  position: relative;
+  height: 100%;
+  width: 35vw;
+  padding: 1vw;
+  /* background-color: aqua; */
+}
+
+#page1 .workspace h1 {
+  font-size: 2vw;
+  font-family: purana2;
+}
+#page1 .workspace h3 {
+  font-size: 1.2vw;
+  width: 30vw;
+  font-family: purana1;
+  color: rgba(0, 0, 0, 0.75);
+}
+#page1 #w3 {
+  margin-left: 5vw;
+}
+#page1 #w2 {
+  margin-left: 2vw;
+  margin-top: 5vw;
+  height: 100%;
+  width: 40vw;
+  padding: 5vw 3vw;
+  text-align: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
+  border-right: 1px solid rgba(0, 0, 0, 0.7);
+}
+#page1 #w2 h1 {
+  margin-top: -10vh;
+  font-family: purana2;
+  font-size: 3.5vw;
+}
+#page1 #w2 h2 {
+  font-family: purana1;
+  font-size: 2.2vw;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+}
+#page1 #w2 h4 {
+  margin-top: 1vh;
+  font-family: purana1;
+  font-size: 1.3vw;
+  color: rgba(0, 0, 0, 0.7);
+}
+#page1 #w2 span {
+  color: black;
+}
+
+#page1 .workspace #image {
+  height: 10vw;
+  width: 25vw;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+#page1 .workspace #image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.7s;
+}
+#page1 .workspace #image img:hover {
+  scale: 1.3;
+}
+#page1 #miranda {
+  margin: 2vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1a;
+}
+#page1 #miranda h1 {
+  font-size: 38vw;
+  font-weight: 300;
+  letter-spacing: -3vh;
+  color: #ddd9d0;
+  font-family: purana3;
+}
+
+#page2 {
+  margin-top: 15vh;
+  height: 150vh;
+  width: 100vw;
+  display: flex;
+}
+#page2 h1 {
+  font-size: 7.5vw;
+  font-weight: 500;
+  font-family: purana3;
+}
+#page2 span {
+  font-family: purana2;
+}
+#page2 #bada {
+  margin-top: -5%;
+  font-size: 13vw;
+}
+#left {
+  height: 100%;
+  width: 35%;
+  padding: 2vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.7);
+}
+#left img {
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+#left p {
+  font-size: 2vw;
+  font-family: purana2;
+  color: rgba(0, 0, 0, 0.7);
+}
+#left #badaA {
+  font-size: 5vw;
+  color: #ddd9d0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+}
+#right {
+  height: 100%;
+  width: 65%;
+  padding: 2vw;
+}
+#right img {
+  border: 1px solid black;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page3 {
+  height: 180vh;
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: chocolate; */
+}
+#page3 #web {
+  margin: 2vw;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#page3 #web h1 {
+  background-color: #1c1c1a;
+  color: #ddd9d0;
+  text-align: center;
+  font-family: purana2;
+  letter-spacing: -1vw;
+  font-size: 25vw;
+  line-height: 23vw;
+  font-weight: 500;
+}
+#page3 #web img {
+  height: 90%;
+  padding-right: 2vw;
+}
+#page3 #tt {
+  height: 130vh;
+  width: 100vw;
+  display: flex;
+}
+#page3 #left {
+  width: 60%;
+  height: 100%;
+  padding: 2vw;
+  border-right: 1px solid black;
+  /* background-color: brown; */
+}
+#page3 #left img {
+  width: 100%;
+  border: 1px solid black;
+}
+#page3 #left #top {
+  padding-bottom: 3vw;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+}
+#page3 #left #top span {
+  color: black;
+}
+#page3 #left #top h1 {
+  font-family: purana2;
+  font-size: 3vw;
+}
+#page3 #left #top h2 {
+  margin-top: 2vh;
+  font-family: purana1;
+  font-size: 2.2vw;
+  color: rgba(0, 0, 0, 0.6);
+}
+#page3 #left #top h4 {
+  margin-top: 2vh;
+  font-family: purana1;
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, 0.7);
+}
+#page3 #left #top #tleft {
+  height: 100%;
+  width: 45%;
+  border-right: 1px solid black;
+}
+#page3 #left #top #tright {
+  padding: 0 2vw;
+  height: 100%;
+  width: 55%;
+}
+#page3 #left #top #tright span {
+  font-family: purana2;
+  font-size: 2vw;
+}
+#page3 #left #top #tright p {
+  font-size: 1vw;
+  font-family: purana1;
+}
+#page3 #right {
+  width: 40%;
+  height: 100%;
+  padding: 2vw;
+  /* background-color: chocolate; */
+}
+#page3 #right h1 {
+  font-weight: 500;
+  font-family: purana3;
+  font-size: 8.5vw;
+}
+#page3 #right span {
+  font-family: purana2;
+  font-size: 8vw;
+  color: #1c1c1a;
+}
+#page3 #right #bada {
+  font-size: 16vw;
+  margin-top: -2vh;
+}
+#page3 #right #badaA {
+  background-color: #1c1c1a;
+  font-family: purana3;
+  color: #ddd9d0;
+
+}
+#page3 #right p {
+  margin-top: -2vw;
+  text-align: inherit;
+  font-family: purana1;
+  font-size: 2.1vw;
+}
+#page3 #right #para {
+  margin-top: 3vw;
+}
+#page3 #right button {
+  width: 20vw;
+  padding: 1vw;
+  overflow: hidden;
+  margin: 0.5vw 9vw;
+  font-family: purana3;
+  font-size: 4.5vw;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 70%;
+}
+
+#page4 {
+  height: 130vh;
+  width: 100vw;
+  padding: 2vw;
+}
+#page4 #num{
+    height: 25vh;
+    width: 95vw;
+    padding: 5vh 3vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page4 #num .number{
+    height: 100%;
+    width: 22vw;
+    text-align: center;
+}
+#page4 #num .number h1{
+    letter-spacing: -5px;
+    margin-left: -1vw;
+    font-size: 4.4vw;
+    margin-top: -7vh;
+    font-weight: 400;
+    font-family: purana2;
+}
+#page4 #num .number span{
+    font-size: 9vw;
+    margin-left: 1vw;
+    font-weight: 400;
+    font-family: purana2;
+}
+
+#page4 #num .number h2{
+    margin-left: -5vw;
+    color: #1c1c1acd;
+    letter-spacing: -2px;
+    font-size: 2vw;
+    font-family: purana1;
+}
+
+#page4 #pixel{
+    height: 100vh;
+    width: 94vw;
+    gap: 2vw;
+    display: flex;
+}
+#page4 #pixel h1{
+    margin-top: -5vh;
+    font-family: purana3;
+    letter-spacing: -1vw;
+    font-size: 30vw;
+    font-weight: 300;
+}
+#page4 #pixel #p1{
+    padding: 2vw;
+    height: 100%;
+    width: 50%;
+    /* background-color: brown; */
+}
+#page4 #pixel #p1 #top #image{
+    height: 50vh;
+    position: relative;
+    width: 50vw;
+}
+#page4 #pixel #p1 #top img{
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+#page4 #pixel #p1 #bottom{
+    margin-top: -13vh;
+}
+#page4 #pixel #p1 #top{
+    display: flex;
+}
+#page4 #pixel #p2{
+    padding: 2vw 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: chocolate; */
+}
+#page4 #pixel #p2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#page5{
+    height: 100vh;
+    width: 100vw;
+    padding: 2vw;
+}
+#page5 #top{
+    height: 50vh;
+    width: 96vw;
+    display: flex;
+    align-items: center;
+    /* background-color: chocolate; */
+}
+#page5 #top h1{
+    letter-spacing: -1.4vw;
+    font-family: purana3;
+    font-size: 30vw;
+    font-weight: 400;
+}
+#page5 #top span{
+    font-family: purana2;
+}
+#page5 #top img{
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+#page5 #bottom{
+    height: 50vh;
+    width: 96vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: brown; */
+}
+
+#page5 #bottom h1{
+    font-size: 28vw;
+    font-family: purana3;
+    font-weight: 400;
+    color: #ddd9d0;
+    background-color: #1c1c1a;
+    letter-spacing: -1.5vw;
+}
+#page5 #text{
+    height: 100%;
+    padding: 1vw;
+    /* background-color: aquamarine; */
+}
+#page5 #text p{
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: purana1;
+}
+#page5 #text h2{
+    margin-top: 1.5vh;
+    font-size: 4vw;
+    font-family: purana1;
+}
+
+
+#page6{
+    margin-top: 5vh;
+    height: 80vh;
+    width: 100vw;
+    padding: 2vw;
+}
+
+#page6 #cards{
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page6 .card{
+    height: 50vh;
+    width: 50vw;
+    padding: 1.5vw;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.7s;
+    background-color: rgba(210, 105, 30, 0.2);
+}
+#page6 .card #cargo{
+    height: 100%;
+    width: 100%;
+    padding: 1vw;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 3px dashed black;
+}
+#page6 .card:hover{
+  font-size: 1.5vw;
+    z-index: 9;
+    width: 200vw;
+}
+#page6 .card p{
+  font-family: purana1;
+  font-weight: 400;
+}
+#page6 .card h1{
+  margin-top: 20vh;
+  font-family: purana3;
+  font-weight: 400;
+}
+#page6 .card h2{
+  font-family: purana2;
+  font-weight: 400;
+}
+#page6 #footer{
+  margin-top: 5vh;
+  height: 20vh;
+  width: 96vw;
+  padding: 2vw;
+  border-top: 1px solid black;
+  display: flex;
+  gap: 5vw;
+  align-items: center;
+  justify-content: space-between;
+}
+#page6 #footer #lefty img{
+  height: 2vw;
+  object-fit: cover;
+}
+#page6 #footer #lefty #stamp{
+  height: 7vw;
+}
+#page6 #footer #righty i{
+  margin-left: 2vw;
+  font-size: 2vw;
+}
