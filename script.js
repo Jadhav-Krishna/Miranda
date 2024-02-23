@@ -63,32 +63,37 @@ function darkmode() {
 darkmode();
 
 var timelinex = gsap.timeline();
-// function time() {
-//   a = 0;
-//   setInterval(function () {
-//     a = a + Math.floor(Math.random() * 10);
-//     if (a < 100) {
-//       document.querySelector("#loader h2").innerHTML = a + "%";
-//     } else {
-//       a = 100;
-//       document.querySelector("#loader h2").innerHTML = a + "%";
-//     }
-//   }, 250);
-// }
-// time();
-// timelinex.to("#loader h2", {
-//   // delay: 1,
-//   duration: 1,
-//   onStart: time(),
-// });
-// timelinex.to("#loader", {
-//   y: "-100vh",
-//   // delay: 1,
-//   duration: 1.5,
-//   scale: 0,
-// });
+function time() {
+  a = 0;
+  setInterval(function () {
+    a = a + Math.floor(Math.random() * 10);
+    if (a < 100) {
+      document.querySelector("#loader h2").innerHTML = a + "%";
+    } else {
+      a = 100;
+      document.querySelector("#loader h2").innerHTML = a + "%";
+    }
+  }, 250);
+}
+time();
+timelinex.to("#loader h2", {
+  delay: 1,
+  duration: 1,
+  onStart: time(),
+});
+timelinex.to("#loader", {
+  y: "-100vh",
+  delay: 1,
+  duration: 1.5,
+  scale: 0,
+});
 
-
+timeline.from("#nav",{
+  y:10,
+  opacity:0,
+  duration:1,
+  delay: 0.5,
+})
 timelinex.from(
   "#page1 #work #w2 h1 ,#page1 #work #w2 h2 ,#page1 #work #w2 h4",
   {
