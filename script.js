@@ -83,16 +83,16 @@ timelinex.to("#loader h2", {
 });
 timelinex.to("#loader", {
   y: "-100vh",
-  delay: 1,
-  duration: 1.5,
+  delay: 2.5,
+  duration: 1,
   scale: 0,
 });
 
-timeline.from("#nav",{
+timeline.to("#nav",{
   y:10,
   opacity:0,
   duration:1,
-  delay: 0.5,
+  delay: 1,
 })
 timelinex.from(
   "#page1 #work #w2 h1 ,#page1 #work #w2 h2 ,#page1 #work #w2 h4",
