@@ -18,6 +18,23 @@ body {
   #main {
     overflow: hidden;
   }
+  #menu{
+    width: 100vw;
+  }
+  #menu h1{
+    margin-top: 10vh;
+    font-size: 15vw;
+    font-family: purana1;
+  }
+  #menu a{
+    text-decoration: none;
+    font-family: purana3;
+    margin-left: -30vw;
+    font-size: 10vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
   #page1 .workspace {
     display: none;
   }

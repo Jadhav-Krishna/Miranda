@@ -62,6 +62,25 @@ function darkmode() {
 }
 darkmode();
 
+function openclose(){
+  var icon = document.querySelector("#nav #icon");
+  var menu = document.querySelector("#page1 #menu");
+  var x = 0;
+  icon.addEventListener("click", function(){
+      if (x == 1){
+        menu.style.opacity = 1;
+        menu.style.zIndex = 9;
+        x=0; 
+      } else {
+        menu.style.opacity = 0;
+        menu.style.zIndex = 1;
+        x=1;
+      }
+    })
+}
+openclose();
+
+
 var timelinex = gsap.timeline();
 function time() {
   a = 0;
