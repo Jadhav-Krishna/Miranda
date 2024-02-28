@@ -15,10 +15,15 @@ body {
   #nav #n1 {
     display: none;
   }
+  #nav{
+    z-index: 5;
+  }
   #main {
     overflow: hidden;
   }
   #menu{
+    margin-top: 10vh;
+    height: 90vh;
     width: 100vw;
   }
   #menu h1{
