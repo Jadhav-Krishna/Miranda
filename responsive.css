@@ -16,12 +16,13 @@ body {
     display: none;
   }
   #nav{
-    z-index: 5;
+    z-index: 9;
   }
   #main {
     overflow: hidden;
   }
   #menu{
+    z-index: 1;
     margin-top: 10vh;
     height: 90vh;
     width: 100vw;
@@ -38,6 +39,9 @@ body {
     font-size: 10vw;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
+  }
+  #menu #menu-item{
+    margin-bottom: 20%;
   }
   
   #page1 .workspace {
